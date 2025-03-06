@@ -4,12 +4,12 @@ import viteLogo from "/vite.svg";
 
 export const App = () => {
   const [count, setCount] = useState(0);
-
-  return (
+  const [title, settitle] = useState("hahahhah");
+  return ( 
     <div className="h-dvh flex flex-col items-center justify-center">
       <div className="bg-white p-8 rounded-md shadow-lg">
         <h1 className="text-center font-bold text-3xl text-blue-400 mb-4">
-          Frontend Rocks
+          {title}
         </h1>
 
         <div className="flex justify-center space-x-4 mb-2">
@@ -30,6 +30,13 @@ export const App = () => {
           >
             Hai premuto il pulsante {count} {count === 1 ? "volta" : "volte"}
           </button>
+         <button
+           className="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md cursor-pointer"
+            onClick={() => settitle("Charizard")}
+          
+          >
+          cambio titolo
+         </button>
           <p className="text-center">
             Modifica <code>src/App.tsx</code> e salva per testare l'hot reload
           </p>
