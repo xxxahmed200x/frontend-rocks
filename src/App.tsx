@@ -36,7 +36,7 @@ export const App = () => {
             onClick={() => settitle("Charizard")}
           
           >
-          cambio titolo
+          cambio 
          </button>
           <p className="text-center">
             Modifica <code>src/App.tsx</code> e salva per testare l'hot reload
